@@ -12,10 +12,10 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
-	public $host = '37.140.192.47';
-	public $user = 'u7700_meridian';
-	public $password = 'Kqz2*d25';
-	public $db = 'u7700387_meridian';
+	public $host = 'localhost';
+	public $user = 'u0090986_meridia';
+	public $password = '91q;V,!9x.qO';
+	public $db = 'u0090986_meridian';
 	public $dbprefix = 'jos_';
 	public $live_site = '';
 	public $secret = 'qTs74SrWUKMfxxEt';
