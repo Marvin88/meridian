@@ -1,0 +1,3432 @@
+@font-face {
+    font-family: Myriad Pro; /* Гарнитура шрифта */
+    src: url(../fonts/MyriadProRegular.ttf); /* Для IE5-8 */
+}
+@font-face {
+    font-family: Myriad Pro Bold; /* Гарнитура шрифта */
+    src: url(../fonts/MyriadProBold.otf); /* Для IE5-8 */
+}
+@font-face {
+    font-family: GothamPro; /* Гарнитура шрифта */
+    src: url(../fonts/GothamProRegular.ttf); /* Для IE5-8 */
+}
+@font-face {
+    font-family: GothamProMedium; /* Гарнитура шрифта */
+    src: url(../fonts/GothamProMedium.ttf); /* Для IE5-8 */
+}
+@font-face {
+    font-family: Intro; /* Гарнитура шрифта */
+    src: url(../fonts/intro-book.otf); /* Для IE5-8 */
+}
+
+
+
+/*  ################### 320 PX #################### */
+
+
+/*@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px){
+    
+  }*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1280px){
+    
+    
+
+  }
+  
+@media (min-width: 1280px) {
+
+}
+@media only screen 
+  and (min-device-width: 768px)
+  {
+    
+.menu{
+    background-color: #232159;
+    height: 76px;
+        cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    line-height: 4;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 45px;
+     transition: all 0.5s;
+}
+
+.menu:hover{
+     background-color: #4116ae;
+}
+.menu.active{
+    background-color: #4116ae;
+    transition: all 0.5s;
+}
+body{
+        overflow-x: hidden;
+        background: rgb(255, 255, 255)!important;
+}
+.container-fluid{background-color: #fff;}
+.burder{
+    position: absolute;
+    right: 28px;
+    top:24px;
+    cursor:pointer;
+}
+
+.no-p-l{padding-left: 0px!important;}
+.no-p-r{padding-right: 0px!important;}
+.clear{clear: both;}
+.header-phones a{
+  font-size: 18px;
+  font-family: "Myriad Pro";
+  color: rgb(45, 39, 79);
+  line-height: 4.2;
+  text-align: left;
+}
+.top-note{
+    text-align: center;
+  height: 92px;
+  background-image: url('../img/note-bg-1.png');
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+.top-note{
+  font-size: 18px;
+  font-family: "Intro";
+  color: rgb(255, 255, 255);
+  line-height: 5;
+  text-align: center;
+}
+.book-1{
+    height: 100%;
+    background-image: url(../img/book1.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: top left;
+    background-size: cover;
+
+}
+.glasses{
+    background-image: url('../img/imgpsh_fullsize.png');
+    background-repeat: no-repeat;
+    width: 176px;
+    position: absolute;
+    bottom: 20px;
+    left: 7px;
+    height: 121px;   
+}
+#inner-menu{
+    
+    text-align: center;
+} 
+.inner-menu-2{
+    background-color:#4d59b1;
+    padding-top: 6px;
+    text-align: center;
+} 
+.book-2{
+    background-image: url(../img/book-2.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    height: 50%;
+}
+.book-3{
+    background-image: url(../img/book-3.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    height: 50%;
+    padding-left: 71px;
+}
+.btn-1-transperent{
+
+    background-color: rgba(255, 255, 255, 0)!important;
+}
+.book-3 .author-name{
+    padding-top: 38px;
+}
+.book-3 .book-name{
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 17px;
+}
+.book-3 .toms-count{
+    padding-bottom: 13px;
+}
+.book-3 .book-price{
+    padding-bottom: 14px;
+}
+.conf-text{
+        position: absolute;
+    /* z-index: 11111111111111111; */
+    top: 0;
+}
+.toms-count{
+  font-size: 18px;
+  font-family: "Myriad Pro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+}
+.header-block{
+    height: 76px;
+}
+.conference{
+    background-image: url('../img/main-block-p-bg.png'); 
+    background-repeat: no-repeat;
+    position: relative;
+    height: 406px;
+    background-size: cover;
+    margin-top: -2px;
+    overflow: hidden;
+    width: 103%;
+}
+.plakat-main{
+    background:#6d7eb5;
+    position: relative;
+    height: 506px;
+}
+.plakat{
+    background-image: url('../img/plakat-1.png'); 
+    background-repeat: no-repeat;
+    height: 507px;
+    width: 369px;
+    position:  absolute;
+    left: 0px;
+    top: 0;
+}
+.author-name {
+  font-size: 18px;
+  font-family: "Myriad Pro";
+  color: rgb(234, 239, 242);
+  line-height: 1.2;
+  text-align: left;
+}
+.book-name{
+  font-size: 21px;
+  font-family: "Myriad Pro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+}
+.book-price{
+  font-size: 22px;
+  font-family: "Myriad Pro Bold";
+  letter-spacing: 3px;
+  color: rgb(45, 39, 79);
+  line-height: 1.2;
+  text-align: left;
+  
+}
+.btn-2-1 a {
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "GothamPro";
+    line-height: 2.4;
+    text-align: center;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    transition: all 0.5s;
+    width: 100%;
+}
+.bottom-cart-block.fixed{
+    position: fixed;
+   bottom:0px;
+    width: 100%;
+}
+.btn-1{
+    float: left;
+    min-width: 170px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(65, 22, 174);
+  transition: all 0.5s;
+    margin-right: 10px;
+}
+.fb-footer{
+    
+    width: 38px;
+    height: 37px;
+}
+.fb-footer a{
+    margin-left: -30px;
+    margin-top: 30px;
+    display: block;
+}
+.btn-1 a{
+    
+    display: block;
+    text-transform: uppercase;
+  font-size: 14px;
+  font-family: "GothamPro";
+  color: rgb(255, 255, 255);
+  line-height: 2.4;
+  text-align: center;
+  transition: all 0.5s;
+}
+.btn-1:hover{
+    float: left;
+    min-width: 170px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  background-color: #fff!important;
+  transition: all 0.5s;
+    margin-right: 10px;
+}
+.btn-transp:hover{
+    background-color: rgba(255, 255, 255, 0)!important;
+    
+}
+.btn-transp:hover a{color: #fff!important;}
+.btn-1 a:hover{
+    transition: all 0.5s;
+    display: block;
+    text-transform: uppercase;
+  font-size: 14px;
+  font-family: "GothamPro";
+  color: rgb(45, 39, 79);
+  line-height: 2.4;
+  text-align: center;
+}
+
+
+.book-1 .author-name{
+    margin-top: 133px;
+}
+.book-1 .author-name, .book-1 .book-name, .book-1 .book-name, .book-1 .book-price , .book-1 .book-more {
+    padding-left: 70px;
+}
+.book-1 .book-name{
+    margin-top: 25px;
+}
+.book-1 .book-price{margin-top: 82px;}
+.book-1 .book-more{margin-top: 30px;}
+
+
+.book-2 .author-name, .book-2 .book-name, .book-2 .book-name, .book-2 .book-price , .book-2 .book-more {
+    padding-left: 10%;
+}
+.book-2 .book-name{
+    margin-top: 20px;
+}
+.book-2 .author-name{
+    margin-top: 53px;
+}
+.book-2 .book-price{margin-top: 17px;}
+.book-2 .book-more{margin-top: 25px;}
+
+
+.conf-header{
+    margin-top: 82px;
+    margin-bottom: 17px;
+    background-color: #bd185c;
+    font-size: 18.4px;
+    font-family: "GothamPro";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 2.2;
+    text-align: center;
+}
+.conf-name{
+  font-size: 40px;
+  font-family: "Myriad Pro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+
+}
+.conf-name {
+    padding-bottom: 25px;
+}
+.plakat-info{
+    float: left;
+}
+.plakat-info .author-name{
+    padding-top: 108px;
+}
+.plakat-info .book-name{
+    padding-top: 16px;
+}
+.plakat-info .toms-count{
+    padding-top: 19px;
+    padding-bottom: 15px;
+}
+.plakat-info .book-price{
+    padding-bottom: 60px;
+}
+.hello-header{
+    padding-top: 110px;
+  font-size: 25px;
+  font-family: "Myriad Pro";
+  color: rgb(45, 39, 79);
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 22px;
+}
+.hello-text{
+  font-size: 16px;
+  font-family: "Myriad Pro";
+  color: rgb(26, 26, 27);
+  line-height: 1.2;
+  text-align: left;
+  height: 234px;
+  margin-bottom: 81px;
+}
+.hello-main{
+    padding-left: 72px;
+}
+.main-c-text{
+    padding-left: 20%;
+    padding-right: 20%;
+  font-size: 15px;
+  font-family: "Myriad Pro";
+  color: rgb(44, 44, 44);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+.main-bottom-contacts img{
+        display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.main-bottom-contacts{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.bottom-cart-block{
+    background-color: #657cc6;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.cart-summ,.footer-cart-currency{
+  font-size: 16px;
+  font-family: "Myriad Pro";
+  color: rgb(44, 44, 44);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+.footer-cart-currency{
+    
+}
+.cart-count{
+    width: 55px;
+    text-align: center;
+        line-height: 33px;
+  font-size: 18px;
+  font-family: "GothamPro";
+  color: rgb(44, 44, 44);
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.hidden-menu-fixed .menu{
+    
+}
+#inner-menu{position: relative;}
+#inner-menu.fixed-top-block-2{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding-top: 0px;
+    z-index:1111111;
+    overflow-y: hidden;
+    transition: all 0.5s;
+    opacity: 1;
+}
+#inner-menu-2.fixed-top-block-2{
+    padding-top: 6px;
+}
+.menu-block-wrapper{position: relative;}
+.hidden-menu-fixed{
+    position: absolute;
+    right: 0px;
+    top: -19px;
+}
+.btn-make-order{
+        display: inline-block;
+    background-color: rgb(27, 22, 58);
+  font-size: 14px;
+  font-family: "GothamPro";
+  color: rgb(255, 255, 255);
+  line-height: 2.7;
+  text-align: center;
+  padding-left: 18px;
+    padding-right: 18px;
+    margin-left: 56px;
+    transition: all 0.5s;
+}
+.btn-make-order:hover{
+        display: inline-block;
+    background-color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-family: "GothamPro";
+  color: rgb(27, 22, 58);
+  line-height: 2.7;
+  text-align: center;
+  padding-left: 18px;
+    padding-right: 18px;
+    margin-left: 56px;
+    transition: all 0.5s;
+}
+.footer{
+    background-color: #2d274f;
+    background-image: url(../img/orel-footer.png);    
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 159px;
+}
+.copy{
+  font-size: 14px;
+  font-family: "GothamPro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.logo-footer {
+    margin-top: 34px;
+}
+<!-- ANATOMICHESKIE -->
+
+.inner-menu{
+    background-color: #4d59b1;
+    
+}
+
+.menu-item{
+    padding-left: 25px;
+    padding-right: 25px;
+    display: inline-block;
+}
+.menu-item.active a{
+    border-bottom: 4px solid #d92c2c;
+}
+.menu-item a{
+  font-size: 20px;
+  font-family: "Intro";
+  color: rgb(255, 255, 255);
+  line-height: 2;
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+.anatom-auth-name{
+  font-size: 20px;
+  font-family: "GothamPro";
+  color: rgb(35, 33, 89);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.anatom-book-name{
+  font-size: 25px;
+  font-family: "Myriad Pro";
+  color: rgb(35, 33, 89);
+  line-height: 1.2;
+  text-align: left;  
+  margin-bottom: 28px;
+  margin-top: 15px;
+}
+.label-red{
+    position: absolute;
+    top: 0px;
+    left: 78px;
+    background-image: url(../img/label-red.png);
+    width: 49px;
+    height: 59px;
+    
+  font-size: 13.276px;
+  font-family: "GothamPro";
+  color: rgb(234, 239, 242);
+  font-weight: bold;
+  line-height: 4;
+  text-align: center;
+}
+
+.anatom-text{
+  font-size: 16px;
+  font-family: "GothamPro";
+  color: rgb(25, 25, 25);
+  line-height: 1.2;
+  text-align: left;
+  
+}
+.slider-anatom-1 .slick-dots{bottom:20px!important; text-align: right; right: 60px;}
+.slider-anatom-1 .slick-dots .slick-active{
+    background-color: #4116ae;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+}
+.slick-dots li a{opacity: 0;}
+.slider-anatom-1.slick-slider{margin-bottom: 0px; cursor: pointer;}
+.slider-anatom-1 .slick-dots li{
+    background-color: #fff;
+     width: 14px;
+    height: 14px;
+    border-radius: 7px;
+}
+.anatom-about{
+    position: relative;
+    padding-left: 78px;
+    padding-bottom: 70px;
+    background-color: #f9f9ff;
+    padding-top: 97px;
+}
+.anatom-soderzhanie{
+    padding-top: 80px;
+    padding-bottom: 93px;
+    position: absolute;
+    width: 100%;
+}
+.anatom-soderzhanie-wrapper{
+
+}
+#particles-js{
+    background-color: #e3e6f4!important;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.left-arrow,.right-arrow{cursor:pointer;}
+.anatom-about{
+    height: 100%;
+    max-height: 560px;
+}
+.slider-anatom-1{
+    /*max-height: 531px;*/
+    width: 50%;
+    float: left;
+}
+
+.anatom-soderzhanie-text{
+    
+    background-color: #ffffff;
+    padding-top: 90px;
+    padding-bottom:90px;
+    font-size: 16px;
+    font-family: "GothamPro";
+    color: rgb(13, 13, 13);
+    line-height: 1.875;
+    text-align: left;
+    margin-left: 33px;
+    margin-right: 33px;
+}
+.rekomendatsii{
+    position: relative;
+    background-color: #f5f6fb;
+    
+}
+.label-1{
+    background-color: #4116ae;
+    color: #fff;
+  font-size: 16px;
+  font-family: "GothamPro";
+  text-transform: uppercase;
+  line-height: 3;
+  text-align: center;
+    position: absolute;
+    top: 0px;
+    width: 260px;
+    left: 50%;
+    margin-left: -130px;
+}
+.label-2{
+    background-color: #4116ae;
+    color: #fff;
+  font-size: 16px;
+  font-family: "GothamPro";
+  text-transform: uppercase;
+  line-height: 3;
+  text-align: center;
+    position: absolute;
+    top: 0px;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+}
+.slider-rekomendatsii{
+    height: 400px;
+    margin-top: 120px;
+    margin-bottom: 94px;
+}
+.pages-slide-1{
+    
+    background-image: url('../img/anatomich-slide-1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.pages-slider{
+        max-height: 552px;
+}
+.pages-slide-2{
+    background-image: url('../img/anatomich-slide-2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.pages-slide-3{
+    background-image: url('../img/anatomich-slide-3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.pages-slider{
+    background-image: url('');
+}
+.slide-text{
+    width: 50%;
+    padding-left: 11%;
+    padding-top: 10%;
+    display: inline-block;
+}
+.slide-text span{
+  font-size: 15px;
+  font-family: "GothamPro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  
+}
+.slide-text h2{
+  font-size: 25px;
+  font-family: "GothamPro";
+  color: rgb(234, 239, 242);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+
+}
+.otzivi-anatom{
+    background-color: #ebeef8;
+    padding-top: 90px;
+    position: relative;
+}
+.anatom-otziv-inner{
+  
+}
+.otziv-text{
+    
+    
+}
+.otziv-avatar img{
+    margin: 0 auto;
+    display: block;
+}
+.anatom-otziv-inner{
+    background-color: #fff;
+      padding-top: 60px;
+      padding-bottom: 50px;
+}
+.otzivi-anatom-wrapper{
+    padding-bottom: 50px;
+}
+.anatom-otziv{
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 33px;
+}
+.otziv-text .name{
+  font-size: 20px;
+  font-family: "GothamPro";
+  color: rgb(35, 33, 89);
+  line-height: 1.2;
+  text-align: left;
+}
+.otziv-text .text{
+  font-size: 15px;
+  font-family: "GothamPro";
+  color: rgb(25, 25, 25);
+  line-height: 1.2;
+  text-align: left;
+}
+.book-media{
+    position: relative;
+    background-color: #fff;
+    
+}
+.media-statya-item h2{
+  font-size: 20px;
+  font-family: "GothamPro";
+  color: rgb(35, 33, 89);
+  line-height: 1.2;
+  text-align: left;
+}
+.media-statya-item{
+    padding-top: 40px;
+    padding-left: 95px;
+    padding-bottom: 50px;
+    padding-right: 40px;
+  font-size: 15px;
+  font-family: "GothamPro";
+  color: rgb(25, 25, 25);
+  line-height: 1.2;
+  text-align: left;
+  transition: 0.4s;
+      transition-timing-function: ease-in-out;
+}
+.media-statya-item:hover{
+    background-color: #fff;
+      transition: 0.4s;
+      transition-timing-function: ease-in-out;
+}
+.media-statya-item:hover .state-more-btn{
+    background-color: #232159;
+    border: 1px solid #fff;
+      transition: 0.4s;
+      transition-timing-function: ease-in-out;
+    
+}
+.media-statya-item:hover .state-more-btn a{
+    color: #fff;
+      transition: 0.4s;
+      transition-timing-function: ease-in-out;
+}
+.media-statya-item .header-state{
+    
+}
+.media-page[data-visible="Y"]{
+    display: block;
+}
+.media-page[data-visible="n"]{
+    display: none;
+}
+
+.texts-tab{
+    background-color: #f5f6fb;
+    padding-top: 54px;
+}
+.state-more-btn{
+    width: 170px;
+    border-style: solid;
+    border-width: 2px;
+    
+    background-color:;
+    border: 1px solid #232159;
+    margin-right: 10px;
+    margin-top: 26px;
+}
+.state-more-btn a{
+    display: block;
+    text-transform: uppercase;
+  font-size: 14px;
+  font-family: "GothamPro";
+  color:#232159;
+  line-height: 2.4;
+  text-align: center;
+}
+.media-pages{
+    
+    
+}
+.more-items-media-texts-wrapper{
+    background-color: #fff;
+}
+.media-nav{
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+.media-nav-btn{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+}
+.media-nav-btn span{
+    cursor: pointer;
+  font-size: 14px;
+  font-family: "GothamPro";
+  color: rgb(11, 11, 11);
+  line-height: 1.2;
+  
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  text-align: center;
+}
+.media-nav-btn[data-active="y"] span{
+    border-bottom: 2px solid #4116ae;
+}
+.more-items-media{
+    border: 2px solid #232159;
+    width: 170px;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+.more-items-media a{
+    color: rgb(35, 33, 89);
+    display: block;
+    text-transform: uppercase;
+  font-size: 14px;
+  font-family: "GothamPro";
+  line-height: 2.4;
+  text-align: center;
+  transition: all 0.5s;
+}
+.more-items-media:hover{
+    border: 2px solid #4116ae;
+    transition: all 0.5s;
+}
+
+.more-items-media a:hover{
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+  font-size: 14px;
+  font-family: "GothamPro";
+  line-height: 2.4;
+  text-align: center;
+  background-color: #4116ae;
+  transition: all 0.5s;
+}
+.js-more-texts{
+    margin-top: 36px;
+     margin-bottom: 56px;
+}
+.slick-prev, .slick-next{ background:red;}
+.js-more-video{
+    margin-top: 36px;
+    margin-bottom: 56px;
+}
+.js-more-img{
+     margin-top: 36px;
+     margin-bottom: 56px;
+}
+.right-arrow:before,
+      .left-arrow:before {
+        color: red;
+      }
+.auth-block{
+    position: relative;
+    background-color: #f3f5fc;
+    
+}
+.rekomendatsii-item-inner{
+     background-color: #fff;
+     margin:  0px 20px;
+     padding-top: 30px;
+     padding-bottom: 50px;
+}
+.left-arrow{
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    margin-top: -56px;
+}
+.right-arrow{
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    margin-top: -56px;
+}
+.left-arrow,.right-arrow{
+    width: 100px;
+    height: 42px;
+}
+.rekomendatsii-item{
+   
+}
+.anatom-soderzhanie-text .col{
+ padding-left: 70px;
+ padding-right: 20px;   
+}
+.anatom-soderzhanie{
+    /*background-image: url('../img/soderzhanie-bg.png');*/
+}
+.rekomendatsii-item img{display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;}
+.auth-block-text{
+    padding-left: 15%;
+  font-size: 16px;
+  font-family: "Myriad Pro";
+  color: rgb(115, 118, 138);
+  line-height: 1.2;
+  text-align: left;
+
+}
+.auth-block-text h2{
+    padding-top: 120px;
+  font-size: 25px;
+  font-family: "GothamPro";
+  color: rgb(115, 118, 138);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.auth-block-img{
+    background-image: url('../img/author-1.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    height: 520px;
+}
+.partn_and_spec-right{
+    background-color: #657cc6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: left;
+    padding-left: 8%;
+}
+.partn_and_spec-left{
+    background-color: #73768a;
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: right;
+    padding-right: 14%;
+}
+.partn_and_spec{
+    
+}
+.bx-loading{display: none;}
+.btn-2{
+    display: inline-block;
+    border: 2px solid #fff;
+    min-width: 170px;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+.btn-2-1{
+    display: inline-block;
+    border: 2px solid #fff;
+    min-width: 170px;
+    margin: 0 auto;
+    transition: all 0.5s;
+        margin-right: 14px;
+}   
+.btn-2 a{
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+  font-size: 14px;
+  font-family: "GothamPro";
+  line-height: 2.4;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+transition: all 0.5s;
+
+}
+.btn-2:hover,.btn-2-1:hover{
+    display: inline-block;
+    border: 2px solid #fff;
+    min-width: 170px;
+    margin: 0 auto;
+    background-color: #fff!important;
+    transition: all 0.5s;
+    
+}
+.btn-2-1:hover{margin-right: 14px;}
+.btn-2 a:hover,.btn-2-1 a:hover{
+    
+    display: block;
+    text-transform: uppercase;
+  font-size: 14px;
+  font-family: "GothamPro";
+  line-height: 2.4;
+  text-align: center;
+  color: #73768a;
+transition: all 0.5s;
+}
+.rekomendatsii-item img{
+    display: block;
+}
+.rekomendatsii-item{
+  font-size: 15px;
+  font-family: "GothamPro";
+  color: rgb(25, 25, 25);
+  line-height: 1.2;
+  text-align: center;
+}
+.buy-block{
+    background-position:top left;
+    background-image: url('../img/anatom-book.png');
+    height: 458px;
+    background-repeat: no-repeat;
+    background-color: #241f5a;
+    background-position-x: 18%;
+}
+.buy-block .price{
+    margin-top: 140px;
+  font-size: 80px;
+  font-family: "GothamPro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+}
+.buy-block .shipping{
+    margin-bottom: 28px;
+  font-size: 20px;
+  font-family: "GothamPro";
+  color: rgb(217, 44, 44);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+}
+.btn-3{
+    display: inline-block;
+    border: 2px solid #fff;
+    min-width: 170px;
+    margin: 0 auto;
+    padding: 0px;
+}
+.p-0{padding: 0px!important;}
+.btn-3 a{
+    background-image: url('../img/btn-cart-icon.png');
+    background-position: right 8px  top 8px;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+  font-size: 14px;
+  font-family: "GothamPro";
+  line-height: 2.4;
+  background-color: #4116ae;
+    text-align: left;
+    padding-left: 23px;
+}
+.buy-block .btn-2{margin-right: 14px;}
+.others-item{
+       
+}
+.muscul-other-book .price{    
+        margin-bottom: 26px!important;
+}
+.hello-main{
+    background-image: url('../img/bg-min.png');
+}
+.triggers-other-book .img{/*position: absolute; bottom: 0px;*/}
+.triggers-other-book .text-other{margin-left: 41.7%;}
+.others-item .name{
+  /*font-size: 18px;*/
+  padding-top: 8%;
+  font-size: 120%;
+  font-family: "Myriad Pro";
+  color: rgb(234, 239, 242);
+  line-height: 1.2;
+}
+.header-block.fixed-top-block{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index:1111111;
+    background-color: #fff;
+    transition: all 0.5s;
+    opacity: 1;
+}
+.others{
+    overflow: hidden;
+}
+.others-item .img img{
+    transition: all 0.5s;
+}
+.others-item-bg1 .price{margin-top: 10%;}
+.others-item:hover .img img{
+   -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.book-zoomed{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.others-item .book-name{
+  /*font-size: 21px;*/
+  font-size: 140%;
+  font-family: "Myriad Pro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+.triggers-other-book .price {
+      margin-bottom: 4%!important;
+    margin-top: 5%;
+    }
+.trains-poster .price{
+        margin-top: 6%;
+}
+.muscul-other-book .price {
+    padding-top: 2%!important;
+}
+.triggers-other-book{
+    padding-bottom: 0px!important;
+   
+}
+.muscul-other-book{
+        
+}
+.muscul-other-book .img{
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+.others-item .price{
+    margin-bottom: 10%;
+        font-size: 120%;
+  /*font-size: 20px;*/
+  font-family: "GothamPro";
+  color: rgb(45, 39, 79);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}    
+.others-item .img img{
+    width: 100%;
+}
+.others-item .note{
+  font-size: 100%;
+  font-family: "GothamPro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+      padding-top: 2%;
+    padding-bottom: 2%;
+}
+.others-item-bg1{
+    background-color: #6d7eb5;
+}
+.others-item-bg2{
+     background-color: #bd185c;
+}
+.others-item-bg3{
+     background-color: #888d9e;
+}
+.btn-4{
+    float: left;
+    min-width: 150px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(65, 22, 174);
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.5s;
+}
+.others-item .cart-label{
+    height: 28px;
+}
+.btn-4 a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: "GothamPro";
+    color: rgb(255, 255, 255);
+    line-height: 2;
+    text-align: center;
+    transition: all 0.5s;
+}
+.btn-4:hover{
+
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255)!important;
+    transition: all 0.5s;
+    
+}
+
+.btn-4:hover a {
+    color: rgb(65, 22, 174);
+    transition: all 0.5s;
+}
+/* CONFERENSE */
+.conf-1{
+    
+}
+.conf-img{
+    background-image: url('../img/conference.png');
+    height: 406px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.conf-top-name{
+    
+}
+.label-conf{
+    
+}
+.temi-item img{
+    width: 100%;
+}
+.temi .more-items-media{
+    margin-top: 40px;
+}
+.temi {
+    padding-top: 120px;
+    position: relative;
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+.label-3{
+    background-color: #494e64;
+    color: #fff;
+    font-size: 16px;
+    font-family: "GothamPro";
+    text-transform: uppercase;
+    line-height: 3;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    width: 230px;
+    left: 50%;
+    margin-left: -115px;
+}
+.spikeri-item{
+    
+}
+.spikeri-list{
+    
+}
+.spikeri-item .name{
+  padding-right: 100px;
+  padding-bottom: 25px;
+  font-size: 20px;
+  font-family: "Myriad Pro";
+  color: rgb(35, 33, 89);
+  line-height: 1.2;
+  text-align: left;
+}
+.spikeri-item .text{
+  font-size: 15px;
+  font-family: "Myriad Pro";
+  color: rgb(25, 25, 25);
+  line-height: 1.2;
+  text-align: left;
+}
+.social-icon{
+    display: inline-block;
+    padding-right: 10px;
+    margin-top: 40px;
+}
+.spikeri-item img{
+    margin: 0 auto;
+    display: block;
+}
+.spikeri-item-inner{
+    background-color: #fff;
+    border: 1px solid #e3e5f3;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+}
+.spikeri{
+    position: relative;
+    background-color: #f5f6fb;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.schedule-days-day{
+    display: inline-block;
+  font-size: 14px;
+  font-family: "GothamPro";
+  color: rgb(11, 11, 11);
+  text-transform: uppercase;
+  line-height: 2.2;
+  text-align: center;
+  border: 2px solid #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.schedule-days-day.active{
+    border: 2px solid #4116ae;
+}
+.schedule{
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+.schedule-days{
+    padding-bottom: 60px;
+    text-align: center;
+    
+}
+.label-4{
+    background-color: #bd185c;
+    color: #fff;
+    font-size: 16px;
+    font-family: "GothamPro";
+    text-transform: uppercase;
+    line-height: 3;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    width: 230px;
+    left: 50%;
+    margin-left: -115px;
+    
+}
+.schedule-lists-item-time{
+    border-right: 1px solid #454a5e;
+  font-size: 20px;
+  font-family: "GothamPro";
+  color: rgb(65, 22, 174);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2;
+  text-align: center;
+}
+.schedule-lists-item-name{
+  font-size: 18px;
+  font-family: "GothamPro";
+  color: rgb(11, 11, 11);
+  line-height: 2;
+  text-align: left;
+}
+.schedule-lists-item{
+    margin-top: 15px;
+}
+.schedule-lists-item-spiker{
+  font-size: 18px;
+  font-family: "GothamPro";
+  color: rgb(69, 74, 94);
+  line-height: 2;
+  text-align: left;
+  border-left: 1px solid #454a5e;
+}
+.uslovia{
+    background-image: url('../img/block-2.png');
+    height: 425px;
+    position: relative;
+    padding-top: 120px;
+   
+  font-size: 16px;
+  font-family: "GothamPro";
+  color: rgb(255, 255, 255);
+  line-height: 1.875;
+  text-align: justifyLeft;
+}
+.uslovia .col{
+padding-left: 40px;
+    
+}
+.mesto{position: relative;}
+.mesto #map{
+    height: 760px;
+}
+.mesto .label-2{
+    z-index: 1;
+}
+.map-label{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 90px;
+    text-align: center;
+    border-radius: 200px;
+    z-index: 1;
+    background-color: #fff;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    
+}
+.map-label .adress{
+  font-size: 15px;
+  font-family: "GothamPro";
+  color: rgb(44, 44, 44);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.map-label img{
+    margin:  0 auto;
+    margin-bottom: 20px;
+    display: block;
+}
+.map-label .phone{
+  font-size: 15px;
+  font-family: "GothamPro";
+  color: rgb(44, 44, 44);
+  text-transform: uppercase;
+  line-height: 1.2;
+
+}
+.reg-form{
+    padding-top: 40px;
+    background-color: #2f2c73;
+    background-image: none;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.reg-form h2{
+  font-size: 20px;
+  font-family: "GothamPro";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 45px;
+}
+.switch-btn{
+  font-size: 14px;
+  font-family: "GothamPro";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 2.5;
+  text-align: center;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.switch-btn:hover{
+  font-size: 14px;
+  font-family: "GothamPro";
+  color: #4116ae;
+  text-transform: uppercase;
+  line-height: 2.5;
+  text-align: center;
+  border: 2px solid #fff!important;
+  cursor: pointer;
+  background-color: #fff!important;
+  transition: all 0.5s;
+}
+.switch-btn.active{
+    background-color: #4116ae;
+}
+.spik-bg{
+    background-image: url('../img/reg-spik-bg.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    opacity: 1;
+     -webkit-transition: opacity 0.1s linear;
+}
+.reg-listner-bg{
+    background-image: url('../img/reg-listner-bg.png');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    opacity: 1;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s;
+}
+.form-switcher{margin-bottom: 50px;}
+.form-spikeri-wrapper input{
+    width: 100%;
+}
+.form-spikeri-wrapper{
+   overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-out 0.3s;
+     -moz-transition: opacity 1s ease-out 0.3s;
+     -o-transition: opacity 1s ease-out 0.3s;
+     transition: opacity 1s ease-out 0.3s;
+}
+.form-spikeri-wrapper.active{
+   max-height: 9999999px;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-out 0.3s;
+     -moz-transition: opacity 1s ease-out 0.3s;
+     -o-transition: opacity 1s ease-out 0.3s;
+     transition: opacity 1s ease-out 0.3s;
+}
+.form-spikeri-wrapper .submit-form{
+    margin-top: 20px;
+}
+.form-s-item{
+    margin-bottom: 14px;
+}
+.form-spikeri-wrapper input[type="submit"]{
+     background:none;
+    border:1px solid #fff;
+    color:#fff;
+    line-height: 2;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    outline: none;
+    text-decoration: none;
+    background-color: #4116ae;
+    transition: all 0.5s;
+}
+.form-spikeri-wrapper input[type="submit"]:hover{
+    color:#4116ae;
+    border:1px solid #fff;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+.form-spikeri-wrapper input[type="submit"]:active{
+    border:1px solid #fff;
+    background-color: #2f2c73;
+    
+}
+
+.form-spikeri-wrapper input[placeholder]{padding-left: 10px; color:#454545;}
+.form-spikeri-wrapper input::-moz-placeholder     {padding-left: 10px; color:#454545;} 
+.form-spikeri-wrapper input:-moz-placeholder      {padding-left: 10px; color:#454545;} 
+.form-spikeri-wrapper input:-ms-input-placeholder {padding-left: 10px; color:#454545;} 
+.form-spikeri-wrapper input[type="text"],.form-spikeri-wrapper input[type="email"]{
+    line-height: 2.1
+}
+.form-spikeri-wrapper textarea{
+    height: 127px;
+    width: 100%;
+}
+.form-listner-wrapper{
+
+}
+.poster-anatom-1{
+    max-height: 531px;
+    width: 50%;
+    float: left;
+}
+.poster-anatom-1 img{width: 100%;}
+.poster-anatom{
+        background-repeat: no-repeat;
+    min-height: 600px;
+    background-image: url('../img/poster-anatom.png');
+    background-position: center;
+}
+.buy-block-poster-1{
+    background-position:top left;
+    background-image: url('../img/buy-poster-1.png');
+    height: 458px;
+    background-repeat: no-repeat;
+    background-color: #241f5a;
+    background-position-x: 9%;
+}
+
+
+.buy-block-poster-1 .price{
+    margin-top: 140px;
+  font-size: 80px;
+  font-family: "GothamPro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.buy-block-poster-1 .shipping{
+    margin-bottom: 28px;
+  font-size: 20px;
+  font-family: "GothamPro";
+  color: rgb(217, 44, 44);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.buy-block-poster-1 .btn-2{margin-right: 14px;}
+.menu-overlay{
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(155, 168, 212, 0.749);    
+    transition: all 0.5s;
+}
+.menu-overlay.active{
+    z-index: 2;
+    position: absolute;
+    opacity: 1;
+    top: 76px;
+    right: 0px;
+    width: 100%;
+   height: 10000%;
+    background-color: rgba(155, 168, 212, 0.749);
+    transition: all 0.6s;    
+}
+.p-l0{
+    padding-left: 0px;
+}
+.windowHeight{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -111;
+}
+.my-dropdown-menu{
+    overflow: hidden;
+    width: 50%;
+     top:76px;
+    right: 0;
+    margin-right: -9999px;
+    z-index: -2;
+    background-color: #e9ebf5;
+    opacity: 0;
+    position: absolute;
+    transition: margin-right 0.3s, opacity 0.6s, ease-out 0.5s;
+  
+-webkit-box-shadow: -2px 4px 17px 0px rgba(0,0,0,0.31);
+-moz-box-shadow: -2px 4px 17px 0px rgba(0,0,0,0.31);
+box-shadow: -2px 4px 17px 0px rgba(0,0,0,0.31);
+
+}
+.my-dropdown-menu.active{
+     top:76px;
+     right: 0;
+     margin-right: 0px;
+     opacity: 1;
+     z-index: 3;
+     transition: margin-right 0.3s, opacity 0.6s, ease-out 0.5s;
+    position: fixed;
+}
+.my-dropdown-menu h2{
+        padding-left: 33px;
+  font-size: 22px;
+  font-family: "Myriad Pro";
+  color: rgb(45, 39, 79);
+  line-height: 2.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+.my-dropdown-menu .auth-name{
+  font-size: 16px;
+  font-family: "GothamPro";
+  color: rgb(24, 24, 24);
+  line-height: 1.2;
+  text-align: left;
+      padding-top: 25%;
+
+}
+.my-dropdown-menu .img img{
+    width: 100%;
+}
+.my-dropdown-menu .name{
+    padding-top: 8px;
+  font-size: 18px;
+  font-family: "GothamProMedium";
+  color: rgb(24, 24, 24);
+  line-height: 1.2;
+  text-align: left;
+}
+.d-menu-item{
+    padding-left: 30px;
+    
+    padding-bottom: 20px;
+}
+.d-menu-item:hover{
+    background-color: #fff;
+}
+.dropdown-menu-block2{
+    background-color: #fff;
+    position: relative;
+    padding-top: 20px;
+}
+.dropdown-menu-block2 .header{
+    padding-left: 57px;
+  font-size: 20px;
+  font-family: "GothamProMedium";
+  color: rgb(45, 39, 79);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.2;
+  text-align: left;
+}
+.seminari-menu{
+
+    background-image: url('../img/seminari-menu.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 277px;
+}
+.dropdown-menu-block2 .note{
+    position: absolute;
+    
+}
+.label-3-m {
+    z-index: 4;    
+    background-color: #bd185c;
+    color: #fff;
+    font-size: 15px;
+    font-family: "GothamPro";
+    text-transform: uppercase;
+    line-height: 2.4;
+    text-align: left;
+    position: absolute;
+    top: 108px;
+    width: 177px;
+    left: 50%;
+    margin-left: -155px;
+    padding-left: 20px;    
+}
+.label-4-m{
+        background-color: #494e64;
+    position: absolute;
+    z-index: 3;
+    top: 128px;
+    left: 30%;
+    width: 245px;
+    padding-top: 27px;
+    padding-left: 35px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "GothamProMedium";
+    color: rgb(255, 255, 255);
+    line-height: 1.7;
+    text-align: left;
+}
+.menu-contacts{
+    padding-bottom: 70px;
+    padding-left: 57px;
+
+  font-size: 16px;
+  font-family: "GothamPro";
+  color: rgb(44, 44, 44);
+  line-height: 1.2;
+  text-align: left;
+
+}
+.menu-contacts h2{
+   padding-left: 0px;
+    font-size: 20px;
+    font-family: "GothamProMedium";
+    color: rgb(45, 39, 79);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.2;
+    text-align: left;
+}
+.menu-contacts img{
+    display: block;
+    float: left;
+    padding-right: 12px;
+}
+.contact-item-m{
+    margin-top: 20px;
+    padding-left: 0px;
+}
+}
+/* MOBILE */
+@media (min-device-width: 320px) and (max-device-width: 768px) {
+    .header-block img{
+    width: 100%;
+}
+@font-face {
+    font-family: GothamProBold; /* Гарнитура шрифта */
+    src: url(../fonts/GothamProBold.ttf); /* Для IE5-8 */
+}
+
+.menu{
+        background-color: #232159;
+    /* height: 76px; */
+    position: relative;
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    line-height: 3;
+    text-transform: uppercase;
+    text-align: left;
+   
+}
+.menu{
+    font-family: "GothamProMedium";
+}
+.burder{
+    display: inline-block;
+    /* padding-left: 3px; */
+    text-align: right;
+    
+    
+}
+.burder img{
+    width: 75%;
+}
+
+body{
+        overflow-x: hidden;
+        
+}
+.no-p-l{padding-left: 0px!important;}
+.no-p-r{padding-right: 0px!important;}
+.clear{clear: both;}
+.header-phones a{
+  font-size: 18px;
+  font-family: "Myriad Pro";
+  color: rgb(45, 39, 79);
+  line-height: 4.2;
+  text-align: left;
+}
+.top-note{
+    text-align: center;
+  height: 92px;
+  background-image: url('../img/note-bg-1.png');
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+.top-note{
+  font-size: 18px;
+  font-family: "Intro";
+  color: rgb(255, 255, 255);
+  line-height: 5;
+  text-align: center;
+}
+.book-1-label{
+    position:  absolute;
+    left: 15px;
+    background-image: url('../img/label-hit.png');
+    width:28px ;
+    height:32px;
+    color:#fff;
+    text-align: center;
+    font-size: 11px;
+    font-family: "GothamProMedium";
+    line-height: 2.4;
+}
+.book-1{
+    padding-bottom: 18px;
+    
+    background-image: url(../img/book-1-m.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-color:rgb(49, 56, 101);
+    
+}
+.glasses{
+    background-image: url('../img/imgpsh_fullsize.png');
+    background-repeat: no-repeat;
+    width: 176px;
+    position: absolute;
+    bottom: 20px;
+    left: 7px;
+    height: 121px;   
+}
+.book-2{
+    background-image: url(../img/book-2-m.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+        padding-bottom: 15px;
+}
+.book-3{
+    background-image: url(../img/book-3-m.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    padding-bottom: 17px;
+    background-position: right;
+    background-color: #9197aa;
+}
+.btn-1-transperent{
+
+    background-color: rgba(255, 255, 255, 0)!important;
+}
+.book-3 .author-name{
+    padding-top: 38px;
+}
+.book-3 .book-name{
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+.book-3 .toms-count{
+    padding-bottom: 13px;
+}
+.book-3 .book-price{
+    padding-bottom: 14px;
+}
+.toms-count{
+  font-size: 14px;
+  font-family: "Myriad Pro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+}
+.header-block{
+   
+}
+.conference{
+    background-image: url('../img/conference-m.png'); 
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -2px;
+    padding-bottom: 15px;
+    background-color: #4a4f65;
+}
+.plakat-main{
+    background:#6d7eb5;
+    position: relative;
+    padding-bottom: 20px;
+    
+}
+.plakat{
+    background-image: url('../img/plakat-1-m.png'); 
+    background-repeat: no-repeat;
+    height: 507px;
+    width: 369px;
+    position:  absolute;
+    left: 0px;
+    top: 0;
+}
+.author-name {
+  font-size: 14px;
+  font-family: "GothamProBold";
+  color: rgb(234, 239, 242);
+  line-height: 1.2;
+  text-align: left;
+}
+.book-name{
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    text-transform: uppercase;
+}
+.book-price{
+  font-size: 16px;
+  font-family: "Myriad Pro Bold";
+  letter-spacing: 3px;
+  color: rgb(45, 39, 79);
+  line-height: 1.2;
+  text-align: left;
+}
+.btn-1{
+    float: left;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(65, 22, 174);
+  margin-right: 10px;
+    
+}
+.book-more .cart-label{
+    width: 21px;
+    margin-top: -2px;
+}
+.btn-1 a{
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px;
+     font-family: "GothamPro";
+    color: rgb(255, 255, 255);
+    line-height: 1.3;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.book-1 .author-name{
+    margin-top: 27px;
+}
+
+.book-1 .book-name{
+    margin-top: 5px;
+}
+.book-1 .book-price{margin-top: 26px;
+    margin-bottom: 15px;}
+.book-1 .book-more{margin-top: 5px;}
+
+.book-2{position: relative;}
+.book-2 .author-name, .book-2 .book-name, .book-2 .book-name, .book-2 .book-price , .book-2 .book-more {
+    
+}
+.book-2 .book-name{
+    margin-top: 10px;
+}
+.book-2 .author-name{
+    margin-top: 17px;
+}
+.book-2 .book-price{margin-top: 17px;}
+.book-2 .book-more{margin-top: 25px;}
+
+
+.conf-header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #bd185c;
+    font-size: 10px;
+    font-family: "GothamPro";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 2.1;
+    text-align: center;
+}
+.conf-name{
+  font-size: 18px;
+  font-family: "GothamProMedium";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+}
+.conf-name {
+    padding-bottom: 13px;
+}
+.plakat-info{
+    float: left;
+}
+.plakat-info .author-name{
+    padding-top: 16px;
+}
+.plakat-info .book-name{
+    padding-top: 8px;
+}
+.plakat-info .toms-count{
+    padding-top: 2px;
+    padding-bottom: 1px;
+}
+.plakat-info .book-price{
+    padding-bottom: 13px;
+}
+.hello-header{
+    padding-top: 31px;
+  font-size: 17.515px;
+  font-family: "GothamProBold";
+  color: rgb(45, 39, 79);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 22px;
+}
+.hello-text{
+  font-size: 16px;
+  font-family: "Myriad Pro";
+  color: rgb(26, 26, 27);
+  line-height: 1.2;
+  text-align: left;
+}
+.hello-main{
+    background-color: #fbfaf5;
+    padding-bottom: 20px;
+  
+}
+.main-c-text{
+  font-size: 10px;
+  font-family: "GothamPro";
+  color: rgb(44, 44, 44);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+      padding-bottom: 10px;
+}
+.contact-item-f-m{
+    padding-bottom: 8px;
+}
+.main-bottom-contacts img{
+        display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.main-bottom-contacts{
+    padding-top: 31px;
+        padding-bottom: 20px;
+}
+.bottom-cart-block{
+    background-color: #657cc6;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.cart-summ,.footer-cart-currency{
+  font-size: 13px;
+    font-family: "Myriad Pro";
+    color: rgb(44, 44, 44);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+.footer-cart-currency{
+    
+}
+.text-no-right{
+    text-align: left!important;
+}
+.bottom-cart-block img{
+    width: 30px;
+    margin-top: -6px;
+}
+.cart-count{
+    width: 40px;
+    text-align: center;
+    line-height: 1.3;
+  font-size: 16px;
+  font-family: "GothamPro";
+  color: rgb(44, 44, 44);
+  text-transform: uppercase;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+.btn-make-order{
+    display: inline-block;
+    background-color: rgb(27, 22, 58);
+    font-size: 11px;
+    font-family: "GothamPro";
+    color: rgb(255, 255, 255);
+    line-height: 2.7;
+    text-align: center;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.logo-footer img{
+    width: 70px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 16px;
+}
+.footer{
+    background-color: #2d274f;
+    background-image: url(../img/footer-bird-m.png);
+    background-repeat: no-repeat;
+    /* background-position: bottom 0px right 159px; */
+    position: relative;
+}
+.copy{
+  font-size: 9px;
+  font-family: "GothamPro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  padding-top: 45px;
+  padding-bottom: 8px;
+}
+
+.logo-footer {
+
+}
+<!-- ANATOMICHESKIE -->
+
+.inner-menu{
+    background-color: #4d59b1;
+    
+}
+.menu-item{
+    padding-left: 25px;
+    padding-right: 25px;
+    display: inline-block;
+}
+.menu-item.active a{
+    border-bottom: 4px solid #d92c2c;
+}
+.menu-item a{
+  font-size: 20px;
+  font-family: "Intro";
+  color: rgb(255, 255, 255);
+  line-height: 2;
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+.anatom-auth-name{
+  font-size: 20px;
+  font-family: "GothamPro";
+  color: rgb(35, 33, 89);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.anatom-book-name{
+  font-size: 25px;
+  font-family: "Myriad Pro";
+  color: rgb(35, 33, 89);
+  line-height: 1.2;
+  text-align: left;  
+  margin-bottom: 28px;
+  margin-top: 15px;
+}
+.label-red{
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    background-image: url(../img/label-red.png);
+    width: 49px;
+    height: 59px;
+    
+  font-size: 13.276px;
+  font-family: "GothamPro";
+  color: rgb(234, 239, 242);
+  font-weight: bold;
+  line-height: 4;
+  text-align: center;
+}
+
+.anatom-text{
+  font-size: 16px;
+  font-family: "GothamPro";
+  color: rgb(25, 25, 25);
+  line-height: 1.2;
+  text-align: left;
+  
+}
+.slider-anatom-1 .slick-dots{bottom:20px!important; text-align: right; right: 60px;}
+.slider-anatom-1 .slick-dots .slick-active{
+    background-color: #4116ae;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+}
+.slick-dots li a{opacity: 0;}
+.slider-anatom-1.slick-slider{margin-bottom: 0px; cursor: pointer;}
+.slider-anatom-1 .slick-dots li{
+    background-color: #fff;
+     width: 14px;
+    height: 14px;
+    border-radius: 7px;
+}
+.anatom-about{
+    position: relative;
+    
+    padding-bottom: 40px;
+    background-color: #f9f9ff;
+    padding-top: 67px;
+}
+.anatom-soderzhanie{
+        padding-top: 80px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.anatom-soderzhanie-wrapper{
+
+}
+.left-arrow,.right-arrow{cursor:pointer;}
+.anatom-about{
+        height: auto;
+}
+.slider-anatom-1{
+    max-height: 531px;
+    width: 100%;
+    float: left;
+}
+.slick-slide {
+    height: auto!important;
+}
+.anatom-soderzhanie-text{
+        background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    font-family: "GothamPro";
+    color: rgb(13, 13, 13);
+    line-height: 1.3;
+    
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.rekomendatsii{
+    position: relative;
+    background-color: #f5f6fb;
+    
+}
+.label-1{
+       background-color: #4116ae;
+    color: #fff;
+    font-size: 14px;
+    font-family: "GothamPro";
+    text-transform: uppercase;
+    line-height: 3;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    width: 210px;
+    left: 50%;
+    margin-left: -105px;
+}
+.label-2{
+    background-color: #4116ae;
+    color: #fff;
+  font-size: 16px;
+  font-family: "GothamPro";
+  text-transform: uppercase;
+  line-height: 3;
+  text-align: center;
+    position: absolute;
+    top: 0px;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+}
+.slider-rekomendatsii{
+    margin-top: 70px;
+    margin-bottom: 34px;
+}
+.media-page img{
+    width: 50%;
+    display: block;
+    float: left;
+}
+.pages-slide-1{
+    background-image: url('../img/anatomich-slide-1.png');
+}
+.pages-slide-2{
+    background-image: url('../img/anatomich-slide-2.png');
+}
+.pages-slide-3{
+    background-image: url('../img/anatomich-slide-3.png');
+}
+.pages-slider{
+    background-image: url('');
+}
+.slide-text span{
+  font-size: 15px;
+  font-family: "GothamPro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+}
+.slide-text h2{
+  font-size: 25px;
+  font-family: "GothamPro";
+  color: rgb(234, 239, 242);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 270.012px;
+  top: 2069.662px;
+  z-index: 365;
+}
+.otzivi-anatom{
+    background-color: #ebeef8;
+    padding-top: 90px;
+    position: relative;
+}
+.anatom-otziv-inner{
+  
+}
+.otziv-text{
+    
+    
+}
+.otziv-avatar img{
+    margin: 0 auto;
+    display: block;
+}
+.anatom-otziv-inner{
+    background-color: #fff;
+      padding-top: 60px;
+      padding-bottom: 50px;
+}
+.otzivi-anatom-wrapper{
+    padding-bottom: 50px;
+}
+.anatom-otziv{
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 33px;
+}
+.otziv-text .name{
+  font-size: 20px;
+  font-family: "GothamPro";
+  color: rgb(35, 33, 89);
+  line-height: 1.2;
+  text-align: left;
+}
+.otziv-text .text{
+  font-size: 15px;
+  font-family: "GothamPro";
+  color: rgb(25, 25, 25);
+  line-height: 1.2;
+  text-align: left;
+}
+.book-media{
+    position: relative;
+    background-color: #fff;
+    
+}
+.media-statya-item h2{
+  font-size: 20px;
+  font-family: "GothamPro";
+  color: rgb(35, 33, 89);
+  line-height: 1.2;
+  text-align: left;
+}
+.media-statya-item{
+    padding-top: 40px;
+    padding-left: 95px;
+    padding-bottom: 50px;
+    padding-right: 40px;
+  font-size: 15px;
+  font-family: "GothamPro";
+  color: rgb(25, 25, 25);
+  line-height: 1.2;
+  text-align: left;
+  transition: 0.4s;
+      transition-timing-function: ease-in-out;
+}
+.media-statya-item:hover{
+    background-color: #fff;
+      transition: 0.4s;
+      transition-timing-function: ease-in-out;
+}
+.media-statya-item:hover .state-more-btn{
+    background-color: #232159;
+    border: 1px solid #fff;
+      transition: 0.4s;
+      transition-timing-function: ease-in-out;
+    
+}
+.media-statya-item:hover .state-more-btn a{
+    color: #fff;
+      transition: 0.4s;
+      transition-timing-function: ease-in-out;
+}
+.media-statya-item .header-state{
+    
+}
+.media-page[data-visible="Y"]{
+    display: block;
+}
+.media-page[data-visible="n"]{
+    display: none;
+}
+
+.texts-tab{
+    background-color: #f5f6fb;
+    padding-top: 54px;
+}
+.state-more-btn{
+    width: 170px;
+    border-style: solid;
+    border-width: 2px;
+    
+    background-color:;
+    border: 1px solid #232159;
+    margin-right: 10px;
+    margin-top: 26px;
+}
+.state-more-btn a{
+    display: block;
+    text-transform: uppercase;
+  font-size: 14px;
+  font-family: "GothamPro";
+  color:#232159;
+  line-height: 2.4;
+  text-align: center;
+}
+.media-pages{
+    
+    
+}
+.more-items-media-texts-wrapper{
+    background-color: #fff;
+}
+.media-nav{
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+.media-nav-btn{
+        text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+    width: 32%;
+}
+.media-nav-btn span{
+    cursor: pointer;
+    font-size: 11px;
+    font-family: "GothamProBold";
+    color: rgb(11, 11, 11);
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    text-align: center;
+}
+.media-nav-btn[data-active="y"] span{
+    border-bottom: 2px solid #4116ae;
+}
+.more-items-media{
+    border: 2px solid #232159;
+    width: 170px;
+    margin: 0 auto;
+}
+
+.more-items-media a{
+    color: rgb(35, 33, 89);
+    display: block;
+    text-transform: uppercase;
+  font-size: 14px;
+  font-family: "GothamPro";
+  line-height: 2.4;
+  text-align: center;
+}
+.js-more-texts{
+    margin-top: 36px;
+     margin-bottom: 56px;
+}
+.slick-prev, .slick-next{ background:red;}
+.js-more-video{
+    margin-top: 36px;
+    margin-bottom: 56px;
+}
+.js-more-img{
+     margin-top: 36px;
+     margin-bottom: 56px;
+}
+.right-arrow:before,
+      .left-arrow:before {
+        color: red;
+      }
+.auth-block{
+    position: relative;
+    background-color: #f3f5fc;
+    
+}
+.rekomendatsii-item-inner{
+        background-color: #fff;
+    margin: 0px 6px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.rekomendatsii-slider-m .slick-slide.slick-active{
+    opacity: 1;
+    transition: all 0.3s;
+    
+}
+.rekomendatsii-slider-m .slick-slide{
+    opacity: 0.4;
+    transition: all 0.3s;
+    
+}
+.rekomendatsii-slider-m{
+        margin-left: -15px;
+    margin-right: -15px;
+}
+.left-arrow{
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    margin-top: -56px;
+}
+.right-arrow{
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    margin-top: -56px;
+}
+.left-arrow,.right-arrow{
+    width: 100px;
+    height: 42px;
+}
+.rekomendatsii-item{
+   
+}
+.anatom-soderzhanie-text .col{
+ 
+}
+.anatom-soderzhanie{
+    background-image: url('../img/soderzhanie-bg.png');
+}
+.rekomendatsii-item img{display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;}
+.auth-block-text{
+        font-size: 14px;
+    font-family: "Myriad Pro";
+    color: rgb(115, 118, 138);
+    line-height: 1.2;
+    text-align: left;
+}
+.auth-block-text h2{
+       padding-top: 26px;
+    font-size: 16px;
+    font-family: "GothamPro";
+    color: rgb(115, 118, 138);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.auth-block-img{
+    background-image: url(../img/author-1.png);
+    /* background-position: right bottom; */
+    background-repeat: no-repeat;
+    height: 329px;
+    background-position: center;
+    background-size: contain;
+}
+.partn_and_spec-right{
+        background-color: #657cc6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.partn_and_spec-left{
+        background-color: #73768a;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.partn_and_spec{
+    
+}
+.bx-loading{display: none;}
+.btn-2{
+        display: inline-block;
+    border: 2px solid #fff;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.btn-2 a{
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+  font-size: 14px;
+  font-family: "GothamPro";
+  line-height: 2.4;
+  text-align: center;
+
+}
+.rekomendatsii-item img{
+    display: block;
+}
+.rekomendatsii-item{
+  font-size: 15px;
+  font-family: "GothamPro";
+  color: rgb(25, 25, 25);
+  line-height: 1.2;
+  text-align: center;
+}
+.buy-block{
+        background-image: url(../img/anatomic-bg-book-m.png);
+    height: 433px;
+    background-repeat: no-repeat;
+    background-color: #241f5a;
+    /* background-position-x: 18%; */
+    background-position: center;
+    background-position-y: 24px;
+}
+.buy-block .price{
+       margin-top: 228px;
+    font-size: 36px;
+    font-family: "GothamPro";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+}
+.to-cart-btn1{
+    margin-top: 20px!important;
+    width: 80%;
+    margin-left: 10%!important;
+    margin-right: 10%!important;
+}
+.buy-block .shipping{
+       margin-bottom: 22px;
+    font-size: 11px;
+    font-family: "GothamPro";
+    color: rgb(217, 44, 44);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+.btn-3{
+    display: inline-block;
+    border: 2px solid #fff;
+    min-width: 170px;
+    margin: 0 auto;
+    padding: 0px;
+}
+.p-0{padding: 0px!important;}
+.btn-3 a{
+    background-image: url('../img/btn-cart-icon.png');
+    background-position: right 8px  top 8px;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+  font-size: 14px;
+  font-family: "GothamPro";
+  line-height: 2.4;
+  background-color: #4116ae;
+    text-align: left;
+    padding-left: 23px;
+}
+.buy-block .btn-2{margin-right: 14px;}
+.others-item{
+        padding-bottom: 20px;
+}
+.triggers-other-book .name{
+    padding-top: 8%!important;
+}
+.others-item .name{
+  /*font-size: 18px;*/
+  padding-top: 18%;
+  font-size: 100%;
+  font-family: "Myriad Pro";
+  color: rgb(234, 239, 242);
+  line-height: 1.2;
+}
+.triggers-other-book .price {
+    margin-top: 10px!important;}
+.triggers-other-book .book-name{
+  /*font-size: 21px;*/
+  font-size: 100%;
+  font-family: "GothamProBold";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+.others-item .book-name{
+  /*font-size: 21px;*/
+  font-size: 100%;
+  font-family: "GothamProBold";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+.triggers-other-book .price {
+    margin-bottom: 6%!important;}
+.muscul-other-book .price {
+    padding-top: 3%!important;
+}
+
+.others-item .price{
+        margin-top: 29px;
+    margin-bottom: 8%;
+        font-size: 100%;
+  /*font-size: 20px;*/
+  font-family: "GothamPro";
+  color: rgb(45, 39, 79);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}  
+.bg-btn-blue{
+    background-color: #4116ae!important;
+}  
+.others-item .img img{
+    width: 100%;
+}
+.others-item .note{
+  font-size: 100%;
+  font-family: "GothamPro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+      padding-top: 2%;
+    padding-bottom: 2%;
+}
+.others-item-bg1{
+    background-color: none;
+    background-image: url('../img/book-1-m-a.png');
+    background-repeat: no-repeat;
+    
+}
+.others-item-bg2{
+     background-color: #bd185c;
+     background-image: url('../img/book-2-other-m.png');
+}
+.others-item-bg3{
+     background-color: #888d9e;
+     background-image: url('../img/book-3-other-m.png');
+     
+}
+.muscul-other-book .price{
+    margin-top: 0px;
+    margin-bottom: 6%;
+}
+.muscul-other-book .note {
+    font-size: 80%;
+}
+.muscul-other-book .name{
+    padding-top: 10%;
+}
+.btn-4{
+    float: left;
+    /* min-width: 150px; */
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(65, 22, 174);
+    margin-right: 9px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.others-item .cart-label{
+    height: 28px;
+}
+.btn-4 a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: "GothamPro";
+    color: rgb(255, 255, 255);
+    line-height: 2;
+    text-align: center;
+}
+/* CONFERENSE */
+.conf-1{
+    
+}
+.conf-img{
+    background-image: url('../img/conf-top-m.png');
+    height: 198px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.conf-top-name{
+    
+}
+.label-conf{
+    
+}
+.temi-item img{
+    width: 100%;
+}
+.temi .more-items-media{
+    margin-top: 40px;
+}
+.temi {
+    padding-top: 120px;
+    position: relative;
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+.label-3{
+    background-color: #494e64;
+    color: #fff;
+    font-size: 16px;
+    font-family: "GothamPro";
+    text-transform: uppercase;
+    line-height: 3;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    width: 230px;
+    left: 50%;
+    margin-left: -115px;
+}
+.spikeri-item{
+    
+}
+.spikeri-list{
+    
+}
+.spikeri-item .name{
+  padding-right: 100px;
+  padding-bottom: 25px;
+  font-size: 20px;
+  font-family: "Myriad Pro";
+  color: rgb(35, 33, 89);
+  line-height: 1.2;
+  text-align: left;
+}
+.spikeri-item .text{
+  font-size: 15px;
+  font-family: "Myriad Pro";
+  color: rgb(25, 25, 25);
+  line-height: 1.2;
+  text-align: left;
+}
+.social-icon{
+    display: inline-block;
+    padding-right: 10px;
+    margin-top: 40px;
+}
+.spikeri-item img{
+    margin: 0 auto;
+    display: block;
+}
+.spikeri-item-inner{
+    background-color: #fff;
+    border: 1px solid #e3e5f3;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+}
+.spikeri{
+    position: relative;
+    background-color: #f5f6fb;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.schedule-days-day{
+    display: inline-block;
+  font-size: 14px;
+  font-family: "GothamPro";
+  color: rgb(11, 11, 11);
+  text-transform: uppercase;
+  line-height: 2.2;
+  text-align: center;
+  border: 2px solid #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.schedule-days-day.active{
+    border: 2px solid #4116ae;
+}
+.schedule{
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+.schedule-days{
+    padding-bottom: 60px;
+    text-align: center;
+    
+}
+.label-4{
+    background-color: #bd185c;
+    color: #fff;
+    font-size: 16px;
+    font-family: "GothamPro";
+    text-transform: uppercase;
+    line-height: 3;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    width: 230px;
+    left: 50%;
+    margin-left: -115px;
+    
+}
+.schedule-lists-item-time{
+  font-size: 17px;
+  font-family: "GothamProBold";
+  color: rgb(13, 13, 13);
+  font-weight: bold;
+  line-height: 1.5;
+  border-right: 0px;
+  text-align: left;
+}
+.schedule-lists{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #f5f6fb;
+    padding-bottom: 20px;
+}
+.schedule-lists-item-name{
+  font-size: 18px;
+  font-family: "GothamPro";
+  color: rgb(11, 11, 11);
+  line-height: 2;
+  text-align: left;
+}
+.schedule-lists-item{
+    margin-top: 15px;
+}
+.schedule-lists-item-spiker{
+  font-size: 18px;
+  font-family: "GothamPro";
+  color: rgb(69, 74, 94);
+  line-height: 2;
+  text-align: left;
+  border-left: 0px;
+}
+.uslovia{
+    background-image: url('../img/uslovia-bg-m.png');
+    height: auto;
+    position: relative;
+    padding-top: 78px;
+    background-repeat: repeat-y;
+    font-size: 16px;
+    font-family: "GothamPro";
+    color: rgb(255, 255, 255);
+    line-height: 1.3;
+    text-align: justify;
+    background-size: cover;
+    padding-bottom: 34px;
+}
+.uslovia .col{
+
+    
+}
+.mesto{position: relative;}
+.mesto #map{
+    height: 760px;
+}
+.mesto .label-2{
+    z-index: 1;
+}
+.map-label{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 90px;
+    text-align: center;
+    border-radius: 200px;
+    z-index: 1;
+    background-color: #fff;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    
+}
+.map-label .adress{
+  font-size: 15px;
+  font-family: "GothamPro";
+  color: rgb(44, 44, 44);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.map-label img{
+    margin:  0 auto;
+    margin-bottom: 20px;
+    display: block;
+}
+.map-label .phone{
+  font-size: 15px;
+  font-family: "GothamPro";
+  color: rgb(44, 44, 44);
+  text-transform: uppercase;
+  line-height: 1.2;
+
+}
+.reg-form{
+        padding-top: 16px;
+    background-color: #2f2c73;
+    background-image: none;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.reg-form h2{
+      font-size: 16px;
+    font-family: "GothamPro";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.switch-btn{
+  font-size: 14px;
+  font-family: "GothamPro";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 2.5;
+  text-align: center;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.switch-btn.active{
+    background-color: #4116ae;
+}
+.spik-bg{
+    background-image: none;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    opacity: 1;
+     -webkit-transition: opacity 0.1s linear;
+}
+.reg-listner-bg{
+    background-image: none;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    opacity: 1;
+     -webkit-transition: bopacity 0.1s linear;
+}
+.form-switcher{margin-bottom: 24px;
+      margin-left: 15px;
+    margin-right: 15px;}
+.form-spikeri-wrapper input{
+    width: 100%;
+}
+.form-spikeri-wrapper{
+   
+   overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-out 0.3s;
+     -moz-transition: opacity 1s ease-out 0.3s;
+     -o-transition: opacity 1s ease-out 0.3s;
+     transition: opacity 1s ease-out 0.3s;
+     
+}
+.form-spikeri-wrapper.active{
+    max-height: 9999999px;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-out 0.3s;
+     -moz-transition: opacity 1s ease-out 0.3s;
+     -o-transition: opacity 1s ease-out 0.3s;
+     transition: opacity 1s ease-out 0.3s;
+}
+.form-spikeri-wrapper .submit-form{
+    margin-top: 20px;
+}
+.form-s-item{
+    margin-bottom: 14px;
+}
+.form-spikeri-wrapper input[type="submit"]{
+     background:none;
+    border:1px solid #fff;
+    color:#fff;
+    line-height: 2;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    outline: none;
+    text-decoration: none;
+    background-color: #4116ae;
+}
+.form-spikeri-wrapper input[type="submit"]:active{
+    border:1px solid #fff;
+    background-color: #2f2c73;
+    
+}
+
+.form-spikeri-wrapper input[placeholder]{padding-left: 10px; color:#454545;}
+.form-spikeri-wrapper input::-moz-placeholder     {padding-left: 10px; color:#454545;} 
+.form-spikeri-wrapper input:-moz-placeholder      {padding-left: 10px; color:#454545;} 
+.form-spikeri-wrapper input:-ms-input-placeholder {padding-left: 10px; color:#454545;} 
+.form-spikeri-wrapper input[type="text"],.form-spikeri-wrapper input[type="email"]{
+    line-height: 2.4
+}
+.form-spikeri-wrapper textarea{
+    height: 127px;
+    width: 100%;
+}
+.form-listner-wrapper{
+
+}
+.poster-anatom-1{
+    max-height: 531px;
+    width: 50%;
+    float: left;
+}
+.poster-anatom-1 img{width: 100%;}
+.poster-anatom{
+        background-repeat: no-repeat;
+    min-height: 600px;
+    background-image: url('../img/poster-anatom.png');
+    background-position: center;
+}
+.buy-block-poster-1{
+    background-position:top left;
+    background-image: url('../img/buy-poster-1.png');
+    height: 458px;
+    background-repeat: no-repeat;
+    background-color: #241f5a;
+    background-position-x: 9%;
+}
+
+
+.buy-block-poster-1 .price{
+    margin-top: 140px;
+  font-size: 80px;
+  font-family: "GothamPro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.buy-block-poster-1 .shipping{
+    margin-bottom: 28px;
+  font-size: 20px;
+  font-family: "GothamPro";
+  color: rgb(217, 44, 44);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.buy-block-poster-1 .btn-2{margin-right: 14px;}
+.menu-overlay{
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(155, 168, 212, 0.749);    
+    transition: all 0.5s;
+}
+.menu-overlay.active{
+    z-index: 2;
+    position: absolute;
+    opacity: 1;
+    top: 76px;
+    right: 0px;
+    width: 100%;
+   height: 10000%;
+    background-color: rgba(155, 168, 212, 0.749);
+    transition: all 0.6s;    
+}
+.p-l0{
+    padding-left: 0px;
+}
+.my-dropdown-menu{
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+    /* top: 76px; */
+    right: 0;
+    top: 48px;
+    /* margin-right: -9999px; */
+    z-index: -2;
+    background-color: #e9ebf5;
+    border: 2px solid #4116ae;
+    opacity:0;
+    position: absolute;
+    transition: margin-right 0.3s, opacity 0.6s, ease-out 0.5s;
+   
+}
+.label-new-m{background-image: url('../img/label-new-m.png');
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 29px;
+    height: 34px;
+}
+.my-dropdown-menu.active{
+     top:48px;
+     right: 0;
+     margin-right: 0px;
+     opacity: 1;
+     z-index: 3;
+     height: auto;
+     transition: margin-right 0.3s, opacity 0.6s, ease-out 0.5s;
+    
+}
+.my-dropdown-menu h2{
+        padding-left: 33px;
+  font-size: 22px;
+  font-family: "Myriad Pro";
+  color: rgb(45, 39, 79);
+  line-height: 2.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+.my-dropdown-menu .auth-name{
+  font-size: 16px;
+  font-family: "GothamPro";
+  color: rgb(24, 24, 24);
+  line-height: 1.2;
+  text-align: left;
+      padding-top: 25%;
+
+}
+.my-dropdown-menu .img img{
+    width: 100%;
+}
+.my-dropdown-menu .name{
+    padding-top: 8px;
+  font-size: 18px;
+  font-family: "GothamProMedium";
+  color: rgb(24, 24, 24);
+  line-height: 1.2;
+  text-align: left;
+}
+.d-menu-item{
+    padding-left: 30px;
+    
+    padding-bottom: 20px;
+}
+.d-menu-item:hover{
+    background-color: #fff;
+}
+.dropdown-menu-block2{
+    background-color: #fff;
+    position: relative;
+    padding-top: 20px;
+}
+.dropdown-menu-block2 .header{
+    padding-left: 57px;
+  font-size: 20px;
+  font-family: "GothamProMedium";
+  color: rgb(45, 39, 79);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.2;
+  text-align: left;
+}
+.seminari-menu{
+
+    background-image: url('../img/seminari-menu.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 277px;
+}
+.dropdown-menu-block2 .note{
+    position: absolute;
+    
+}
+.label-3-m {
+    z-index: 4;    
+    background-color: #bd185c;
+    color: #fff;
+    font-size: 15px;
+    font-family: "GothamPro";
+    text-transform: uppercase;
+    line-height: 2.4;
+    text-align: left;
+    position: absolute;
+    top: 108px;
+    width: 177px;
+    left: 50%;
+    margin-left: -155px;
+    padding-left: 20px;    
+}
+.label-4-m{
+        background-color: #494e64;
+    position: absolute;
+    z-index: 3;
+    top: 128px;
+    left: 30%;
+    width: 245px;
+    padding-top: 27px;
+    padding-left: 35px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "GothamProMedium";
+    color: rgb(255, 255, 255);
+    line-height: 1.7;
+    text-align: left;
+}
+.menu-contacts{
+    padding-bottom: 70px;
+    padding-left: 57px;
+
+  font-size: 16px;
+  font-family: "GothamPro";
+  color: rgb(44, 44, 44);
+  line-height: 1.2;
+  text-align: left;
+
+}
+.menu-contacts h2{
+   padding-left: 0px;
+    font-size: 20px;
+    font-family: "GothamProMedium";
+    color: rgb(45, 39, 79);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.2;
+    text-align: left;
+}
+.menu-contacts img{
+    display: block;
+    float: left;
+    padding-right: 12px;
+}
+.contact-item-m{
+    margin-top: 20px;
+    padding-left: 0px;
+}
+}
