@@ -41,10 +41,18 @@ else
 // Add JavaScript Frameworks
 JHtml::_('bootstrap.framework');
 
+$doc->addScriptVersion($this->baseurl . '/templates/' . $this->template . '/js/bootstrap.js');
+$doc->addScriptVersion($this->baseurl . '/templates/' . $this->template . '/js/common.js');
+$doc->addScriptVersion($this->baseurl . '/templates/' . $this->template . '/js/jquery.mCustomScrollbar.min.js');
+$doc->addScriptVersion($this->baseurl . '/templates/' . $this->template . '/js/parallax.js');
 $doc->addScriptVersion($this->baseurl . '/templates/' . $this->template . '/js/template.js');
 
 // Add Stylesheets
 $doc->addStyleSheetVersion($this->baseurl . '/templates/' . $this->template . '/css/template.css');
+$doc->addStyleSheetVersion($this->baseurl . '/templates/' . $this->template . '/css/bootstrap.css');
+$doc->addStyleSheetVersion($this->baseurl . '/templates/' . $this->template . '/css/style.css');
+$doc->addStyleSheetVersion($this->baseurl . '/templates/' . $this->template . '/css/parallax-styles.css');
+$doc->addStyleSheetVersion($this->baseurl . '/templates/' . $this->template . '/css/jquery.mCustomScrollbar.css');
 
 // Use of Google Font
 if ($this->params->get('googleFont'))
@@ -125,35 +133,78 @@ else
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+	<script src="/templates/meridian/js/jquery-3.1.0.min.js"></script>
 	<jdoc:include type="head" />
 	<!--[if lt IE 9]><script src="<?php echo JUri::root(true); ?>/media/jui/js/html5.js"></script><![endif]-->
 </head>
-<body class="site <?php echo $option
+<!--body class="site <?php echo $option
 	. ' view-' . $view
 	. ($layout ? ' layout-' . $layout : ' no-layout')
 	. ($task ? ' task-' . $task : ' no-task')
 	. ($itemid ? ' itemid-' . $itemid : '')
 	. ($params->get('fluidContainer') ? ' fluid' : '');
 	echo ($this->direction == 'rtl' ? ' rtl' : '');
-?>">
+?>"-->
+<body>
+    <div class="windowHeight"></div>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".hello-text").mCustomScrollbar({
+                 axis:"y",
+                theme:"rounded-dark",
+            });
+            var scene = document.getElementById('scene');
+	        var parallax = new Parallax(scene);
+            $('.header-block-wrapper-js').height($('.header-block').outerHeight());
+        });
+        $(document).on('scroll', function(){
+            scrollNow= window.pageYOffset;
+            if(scrollNow>0){
+                $('.header-block').addClass('fixed-top-block');
+                $('.my-dropdown-menu').css('top', '67px');
+            }
+            else{
+                $('.header-block').removeClass('fixed-top-block');
+                $('.my-dropdown-menu').css('top', '76px');
+            }
+        });
+    })(jQuery);
+</script>
 	<!-- Body -->
-	<div class="body">
-		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
+	<div class="container-fluid">
+		<!--div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>"-->
 			<!-- Header -->
-			<header class="header" role="banner">
-				<div class="header-inner clearfix">
-					<a class="brand pull-left" href="<?php echo $this->baseurl; ?>/">
-						<?php echo $logo; ?>
-						<?php if ($this->params->get('sitedescription')) : ?>
-							<?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription'), ENT_COMPAT, 'UTF-8') . '</div>'; ?>
-						<?php endif; ?>
-					</a>
-					<div class="header-search pull-right">
-						<jdoc:include type="modules" name="position-0" style="none" />
+			<div class="header-block-wrapper-js" role="banner">
+				<div class="row header-block" id="inner-menu">
+					<div class="col-lg-3 col-xs-7">
+					    <a href="<?php echo $this->baseurl; ?>/">
+						    <?php echo $logo; ?>
+						    <?php if ($this->params->get('sitedescription')) : ?>
+							    <?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription'), ENT_COMPAT, 'UTF-8') . '</div>'; ?>
+						    <?php endif; ?>
+					    </a>
+					</div>
+					<div class="col-lg-4 col-lg-offset-3 hidden-xs">
+                        <div class="row header-phones">
+                            <div class="col-lg-6">
+                                <a href="#">8 (812) 232 65 29</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="#">+7 (921) 437 63 97 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xs-5">
+					    <div class="row">
+					        <div class="col-lg-10 col-lg-offset-2  menu menu-js">
+						        <jdoc:include type="modules" name="position-0" style="xhtml" />
+						    </div>
+					    </div>
 					</div>
 				</div>
-			</header>
+			</div>
 			<?php if ($this->countModules('position-1')) : ?>
 				<nav class="navigation" role="navigation">
 					<div class="navbar pull-left">
@@ -195,23 +246,23 @@ else
 					</div>
 				<?php endif; ?>
 			</div>
-		</div>
-	</div>
-	<!-- Footer -->
-	<footer class="footer" role="contentinfo">
-		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
-			<hr />
-			<jdoc:include type="modules" name="footer" style="none" />
-			<p class="pull-right">
-				<a href="#" id="back-top">
-					<?php echo JText::_('TPL_PROTOSTAR_BACKTOTOP'); ?>
-				</a>
-			</p>
-			<p>
+		<!--/div-->
+        <!-- Footer -->
+	    <div class="row footer" role="contentinfo">
+		    <div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
+			    <hr />
+			    <jdoc:include type="modules" name="footer" style="none" />
+			    <p class="pull-right">
+				    <a href="#" id="back-top">
+					    <?php echo JText::_('TPL_PROTOSTAR_BACKTOTOP'); ?>
+				    </a>
+			    </p>
+			    <p>
 				&copy; <?php echo date('Y'); ?> <?php echo $sitename; ?>
-			</p>
-		</div>
-	</footer>
+			    </p>
+		    </div>
+	    </div>
+	</div>
 	<jdoc:include type="modules" name="debug" style="none" />
 </body>
 </html>
