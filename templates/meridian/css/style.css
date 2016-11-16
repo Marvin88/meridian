@@ -91,7 +91,7 @@ body{
 .top-note{
     text-align: center;
   height: 92px;
-  background-image: url('../img/note-bg-1.png');
+  background-image: url('../images/note-bg-1.png');
   background-size: contain;
   background-repeat: repeat-y;
 }
@@ -102,17 +102,27 @@ body{
   line-height: 5;
   text-align: center;
 }
+.container-fluid{
+    max-width: 1920px;
+}
 .book-1{
-    height: 100%;
-    background-image: url(../img/book1.png);
+    height: 593px;
+    /*background-image: url(../images/book1.png);*/
+    background: #6d7eb5;
     background-repeat: no-repeat;
     position: relative;
     background-position: top left;
     background-size: cover;
 
 }
+.book-1 img.book{
+        margin-left: 47px;
+        width: 100%;
+        margin-top: 32px;
+         transition: all 0.5s;
+}
 .glasses{
-    background-image: url('../img/imgpsh_fullsize.png');
+    background-image: url('../images/imgpsh_fullsize.png');
     background-repeat: no-repeat;
     width: 176px;
     position: absolute;
@@ -130,19 +140,44 @@ body{
     text-align: center;
 } 
 .book-2{
-    background-image: url(../img/book-2.png);
+    background-color:#be185c;
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
-    height: 50%;
+    
 }
+.book-2 .book{
+    width: 100%;
+     transition: all 0.5s;
+ }
 .book-3{
-    background-image: url(../img/book-3.png);
-    background-repeat: no-repeat;
+    background-color: #9097aa;
     position: relative;
-    background-size: cover;
-    height: 50%;
-    padding-left: 71px;
+}
+.book-3 .book{
+    width: 100%;
+    transition: all 0.5s;
+}
+.book-2:hover .book{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.book-3:hover .book{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.book-1:hover .book{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.book-name,.author-name,.toms-count,.book-price,.book-more{
+    padding-left: 58px;
 }
 .btn-1-transperent{
 
@@ -178,7 +213,7 @@ body{
     height: 76px;
 }
 .conference{
-    background-image: url('../img/main-block-p-bg.png'); 
+    background-image: url('../images/main-block-p-bg.png'); 
     background-repeat: no-repeat;
     position: relative;
     height: 406px;
@@ -193,7 +228,7 @@ body{
     height: 506px;
 }
 .plakat{
-    background-image: url('../img/plakat-1.png'); 
+    background-image: url('../images/plakat-1.png'); 
     background-repeat: no-repeat;
     height: 507px;
     width: 369px;
@@ -248,7 +283,7 @@ body{
   border-style: solid;
   border-width: 2px;
   border-color: rgb(255, 255, 255);
-  background-color: rgb(65, 22, 174);
+  
   transition: all 0.5s;
     margin-right: 10px;
 }
@@ -304,7 +339,7 @@ body{
     margin-top: 133px;
 }
 .book-1 .author-name, .book-1 .book-name, .book-1 .book-name, .book-1 .book-price , .book-1 .book-more {
-    padding-left: 70px;
+    
 }
 .book-1 .book-name{
     margin-top: 25px;
@@ -482,7 +517,7 @@ body{
 }
 .footer{
     background-color: #2d274f;
-    background-image: url(../img/orel-footer.png);    
+    background-image: url(../images/orel-footer.png);    
     background-repeat: no-repeat;
     background-position: bottom 0px right 159px;
 }
@@ -544,7 +579,7 @@ body{
     position: absolute;
     top: 0px;
     left: 78px;
-    background-image: url(../img/label-red.png);
+    background-image: url(../images/label-red.png);
     width: 49px;
     height: 59px;
     
@@ -665,7 +700,7 @@ body{
 }
 .pages-slide-1{
     
-    background-image: url('../img/anatomich-slide-1.png');
+    background-image: url('../images/anatomich-slide-1.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -673,12 +708,12 @@ body{
         max-height: 552px;
 }
 .pages-slide-2{
-    background-image: url('../img/anatomich-slide-2.png');
+    background-image: url('../images/anatomich-slide-2.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
 .pages-slide-3{
-    background-image: url('../img/anatomich-slide-3.png');
+    background-image: url('../images/anatomich-slide-3.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -942,7 +977,7 @@ body{
  padding-right: 20px;   
 }
 .anatom-soderzhanie{
-    /*background-image: url('../img/soderzhanie-bg.png');*/
+    /*background-image: url('../images/soderzhanie-bg.png');*/
 }
 .rekomendatsii-item img{display: block;
     margin: 0 auto;
@@ -971,7 +1006,7 @@ body{
 }
 
 .auth-block-img{
-    background-image: url('../img/author-1.png');
+    background-image: url('../images/author-1.png');
     background-position: right bottom;
     background-repeat: no-repeat;
     height: 520px;
@@ -1056,7 +1091,7 @@ transition: all 0.5s;
 }
 .buy-block{
     background-position:top left;
-    background-image: url('../img/anatom-book.png');
+    background-image: url('../images/anatom-book.png');
     height: 458px;
     background-repeat: no-repeat;
     background-color: #241f5a;
@@ -1088,7 +1123,7 @@ transition: all 0.5s;
 }
 .p-0{padding: 0px!important;}
 .btn-3 a{
-    background-image: url('../img/btn-cart-icon.png');
+    background-image: url('../images/btn-cart-icon.png');
     background-position: right 8px  top 8px;
     background-repeat: no-repeat;
     color: #fff;
@@ -1109,7 +1144,7 @@ transition: all 0.5s;
         margin-bottom: 26px!important;
 }
 .hello-main{
-    background-image: url('../img/bg-min.png');
+    background-image: url('../images/bg-min.png');
 }
 .triggers-other-book .img{/*position: absolute; bottom: 0px;*/}
 .triggers-other-book .text-other{margin-left: 41.7%;}
@@ -1253,7 +1288,7 @@ transition: all 0.5s;
     
 }
 .conf-img{
-    background-image: url('../img/conference.png');
+    background-image: url('../images/conference.png');
     height: 406px;
     background-position: center;
     background-repeat: no-repeat;
@@ -1407,7 +1442,7 @@ transition: all 0.5s;
   border-left: 1px solid #454a5e;
 }
 .uslovia{
-    background-image: url('../img/block-2.png');
+    background-image: url('../images/block-2.png');
     height: 425px;
     position: relative;
     padding-top: 120px;
@@ -1510,14 +1545,14 @@ padding-left: 40px;
     background-color: #4116ae;
 }
 .spik-bg{
-    background-image: url('../img/reg-spik-bg.png');
+    background-image: url('../images/reg-spik-bg.png');
     background-position: right bottom;
     background-repeat: no-repeat;
     opacity: 1;
      -webkit-transition: opacity 0.1s linear;
 }
 .reg-listner-bg{
-    background-image: url('../img/reg-listner-bg.png');
+    background-image: url('../images/reg-listner-bg.png');
     background-position: left bottom;
     background-repeat: no-repeat;
     opacity: 1;
@@ -1599,12 +1634,12 @@ padding-left: 40px;
 .poster-anatom{
         background-repeat: no-repeat;
     min-height: 600px;
-    background-image: url('../img/poster-anatom.png');
+    background-image: url('../images/poster-anatom.png');
     background-position: center;
 }
 .buy-block-poster-1{
     background-position:top left;
-    background-image: url('../img/buy-poster-1.png');
+    background-image: url('../images/buy-poster-1.png');
     height: 458px;
     background-repeat: no-repeat;
     background-color: #241f5a;
@@ -1743,7 +1778,7 @@ box-shadow: -2px 4px 17px 0px rgba(0,0,0,0.31);
 }
 .seminari-menu{
 
-    background-image: url('../img/seminari-menu.png');
+    background-image: url('../images/seminari-menu.png');
     background-repeat: no-repeat;
     background-position: center;
     height: 277px;
@@ -1869,7 +1904,7 @@ body{
 .top-note{
     text-align: center;
   height: 92px;
-  background-image: url('../img/note-bg-1.png');
+  background-image: url('../images/note-bg-1.png');
   background-size: contain;
   background-repeat: repeat-y;
 }
@@ -1883,7 +1918,7 @@ body{
 .book-1-label{
     position:  absolute;
     left: 15px;
-    background-image: url('../img/label-hit.png');
+    background-image: url('../images/label-hit.png');
     width:28px ;
     height:32px;
     color:#fff;
@@ -1895,14 +1930,14 @@ body{
 .book-1{
     padding-bottom: 18px;
     
-    background-image: url(../img/book-1-m.png);
+    background-image: url(../images/book-1-m.png);
     background-repeat: no-repeat;
     position: relative;
     background-color:rgb(49, 56, 101);
     
 }
 .glasses{
-    background-image: url('../img/imgpsh_fullsize.png');
+    background-image: url('../images/imgpsh_fullsize.png');
     background-repeat: no-repeat;
     width: 176px;
     position: absolute;
@@ -1911,14 +1946,14 @@ body{
     height: 121px;   
 }
 .book-2{
-    background-image: url(../img/book-2-m.png);
+    background-image: url(../images/book-2-m.png);
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
         padding-bottom: 15px;
 }
 .book-3{
-    background-image: url(../img/book-3-m.png);
+    background-image: url(../images/book-3-m.png);
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
@@ -1955,7 +1990,7 @@ body{
    
 }
 .conference{
-    background-image: url('../img/conference-m.png'); 
+    background-image: url('../images/conference-m.png'); 
     background-repeat: no-repeat;
     position: relative;
     margin-top: -2px;
@@ -1969,7 +2004,7 @@ body{
     
 }
 .plakat{
-    background-image: url('../img/plakat-1-m.png'); 
+    background-image: url('../images/plakat-1-m.png'); 
     background-repeat: no-repeat;
     height: 507px;
     width: 369px;
@@ -2182,7 +2217,7 @@ body{
 }
 .footer{
     background-color: #2d274f;
-    background-image: url(../img/footer-bird-m.png);
+    background-image: url(../images/footer-bird-m.png);
     background-repeat: no-repeat;
     /* background-position: bottom 0px right 159px; */
     position: relative;
@@ -2244,7 +2279,7 @@ body{
     position: absolute;
     top: 0px;
     left: 15px;
-    background-image: url(../img/label-red.png);
+    background-image: url(../images/label-red.png);
     width: 49px;
     height: 59px;
     
@@ -2364,13 +2399,13 @@ body{
     float: left;
 }
 .pages-slide-1{
-    background-image: url('../img/anatomich-slide-1.png');
+    background-image: url('../images/anatomich-slide-1.png');
 }
 .pages-slide-2{
-    background-image: url('../img/anatomich-slide-2.png');
+    background-image: url('../images/anatomich-slide-2.png');
 }
 .pages-slide-3{
-    background-image: url('../img/anatomich-slide-3.png');
+    background-image: url('../images/anatomich-slide-3.png');
 }
 .pages-slider{
     background-image: url('');
@@ -2623,7 +2658,7 @@ body{
  
 }
 .anatom-soderzhanie{
-    background-image: url('../img/soderzhanie-bg.png');
+    background-image: url('../images/soderzhanie-bg.png');
 }
 .rekomendatsii-item img{display: block;
     margin: 0 auto;
@@ -2650,7 +2685,7 @@ body{
 }
 
 .auth-block-img{
-    background-image: url(../img/author-1.png);
+    background-image: url(../images/author-1.png);
     /* background-position: right bottom; */
     background-repeat: no-repeat;
     height: 329px;
@@ -2702,7 +2737,7 @@ body{
   text-align: center;
 }
 .buy-block{
-        background-image: url(../img/anatomic-bg-book-m.png);
+        background-image: url(../images/anatomic-bg-book-m.png);
     height: 433px;
     background-repeat: no-repeat;
     background-color: #241f5a;
@@ -2742,7 +2777,7 @@ body{
 }
 .p-0{padding: 0px!important;}
 .btn-3 a{
-    background-image: url('../img/btn-cart-icon.png');
+    background-image: url('../images/btn-cart-icon.png');
     background-position: right 8px  top 8px;
     background-repeat: no-repeat;
     color: #fff;
@@ -2824,17 +2859,17 @@ body{
 }
 .others-item-bg1{
     background-color: none;
-    background-image: url('../img/book-1-m-a.png');
+    background-image: url('../images/book-1-m-a.png');
     background-repeat: no-repeat;
     
 }
 .others-item-bg2{
      background-color: #bd185c;
-     background-image: url('../img/book-2-other-m.png');
+     background-image: url('../images/book-2-other-m.png');
 }
 .others-item-bg3{
      background-color: #888d9e;
-     background-image: url('../img/book-3-other-m.png');
+     background-image: url('../images/book-3-other-m.png');
      
 }
 .muscul-other-book .price{
@@ -2875,7 +2910,7 @@ body{
     
 }
 .conf-img{
-    background-image: url('../img/conf-top-m.png');
+    background-image: url('../images/conf-top-m.png');
     height: 198px;
     background-position: center;
     background-repeat: no-repeat;
@@ -3034,7 +3069,7 @@ body{
   border-left: 0px;
 }
 .uslovia{
-    background-image: url('../img/uslovia-bg-m.png');
+    background-image: url('../images/uslovia-bg-m.png');
     height: auto;
     position: relative;
     padding-top: 78px;
@@ -3212,12 +3247,12 @@ body{
 .poster-anatom{
         background-repeat: no-repeat;
     min-height: 600px;
-    background-image: url('../img/poster-anatom.png');
+    background-image: url('../images/poster-anatom.png');
     background-position: center;
 }
 .buy-block-poster-1{
     background-position:top left;
-    background-image: url('../img/buy-poster-1.png');
+    background-image: url('../images/buy-poster-1.png');
     height: 458px;
     background-repeat: no-repeat;
     background-color: #241f5a;
@@ -3286,7 +3321,7 @@ body{
     transition: margin-right 0.3s, opacity 0.6s, ease-out 0.5s;
    
 }
-.label-new-m{background-image: url('../img/label-new-m.png');
+.label-new-m{background-image: url('../images/label-new-m.png');
     position: absolute;
     top: 0;
     left: 15px;
@@ -3357,7 +3392,7 @@ body{
 }
 .seminari-menu{
 
-    background-image: url('../img/seminari-menu.png');
+    background-image: url('../images/seminari-menu.png');
     background-repeat: no-repeat;
     background-position: center;
     height: 277px;

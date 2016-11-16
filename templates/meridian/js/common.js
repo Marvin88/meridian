@@ -10,6 +10,7 @@ function topMenuActiveTrigger(obj){
 
 function getActivZone(scrollNow, scrlElmts){
     var activeZone;
+    if(scrlElmts.lenght>0){
     $.each(scrlElmts , function( index, obj ) {
         offset = obj.offset();
         console.log($('div[data-scroll="'+index+'"]').height());
@@ -23,6 +24,8 @@ function getActivZone(scrollNow, scrlElmts){
         }
     })
     return activeZone;
+    }
+    
 }
 
 function scrollingNavCheck(scrollNow, soderzhanie, rekomendatsii, otzivi, media, author, buy){

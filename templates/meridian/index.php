@@ -205,6 +205,11 @@ else
 					</div>
 				</div>
 			</div>
+            <div class="row top-note hidden-xs">
+                <div class="col-lg-12 top-note">
+                    Все книги о миофасциальных меридианах, фасциальных цепях и цепочках, о единстве движения, структуры и функции.
+                </div>
+            </div>
 			<?php if ($this->countModules('position-1')) : ?>
 				<nav class="navigation" role="navigation">
 					<div class="navbar pull-left">
@@ -248,6 +253,88 @@ else
 			</div>
 		<!--/div-->
         <!-- Footer -->
+        
+        <!--CONTACTS-->
+    <div class="row main-bottom-contacts">
+        <div class="col-lg-3 col-xs-6 no-p-r contact-item-f-m">
+            <img src="/templates/meridian/img/icon1.png"/>
+            <div class="main-c-text">
+            ул. Профессора Попова, 23
+Бизнес центр "Гайот"
+
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6 contact-item-f-m" >
+            <img src="/templates/meridian/img/icon2.png"/>
+            <div class="main-c-text">
+            +7 (812) 232 65 29<br />
++7 (921) 437 63 97 
+            </div>
+        </div>
+        <div class="clear hidden-lg"></div>
+        <div class="col-lg-3 col-xs-6 contact-item-f-m">
+            <img src="/templates/meridian/img/icon3.png"/>
+            <div class="main-c-text">
+            mdcbook@gmail.com
+dsmiz@yandex.ru
+
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-xs-6 contact-item-f-m">
+            <img src="/templates/meridian/img/icon4.png"/>
+            <div class="main-c-text">
+            MDC-BOOK.COM
+facebook.com/mdcbook
+            </div>
+        </div>
+    </div>
+<!-- CART AND ORDER -->
+    <div class="row bottom-cart-block-wrapper">
+        <div class="bottom-cart-block fixed">
+            <div class="col-lg-4 hidden-xs">
+                <div class="btn-1 btn-1-transperent">
+                    <a href="#">
+                        ОСОБЫЕ УСЛОВИЯ
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-xs-12 col-xs-offset-0 col-lg-offset-3 text-right text-no-right">
+                <img src="templates/meridian/img/footer-cart-icon.png"/>
+                <input type="text" class="js-cart-coint cart-count" name="cart-count" value="1"/>
+                <span class="js-cart-summ cart-summ">2 600</span>
+                <span class="footer-cart-currency">РУБ.</span>
+                <a class="btn-make-order" href="#">
+                    ОФОРМИТЬ ЗАКАЗ
+                </a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+<!--FOOTER-->
+    <div class="row footer">
+        <div class="visible-xs col-xs-6 col-xs-offset-3 logo-footer text-right">
+            <img src="templates/meridian/img/logo-footer.png"/>    
+        </div>
+        <div class="col-lg-5 col-xs-12 copy">
+            © 2016 Все права на публикацию текстов и фотографий этого сайта принадлежат ООО "Меридиан-С". 
+        </div>
+        <div class="fb-footer col-lg-1 col-lg-offset-1">
+            <a href="#">
+                <img src="templates/meridian/img/fb-footer.png"/>
+            </a>
+        </div>
+        <div class="hidden-xs col-lg-3 col-xs-12 col-lg-offset-2 col-xs-offset-0 logo-footer text-right">
+            <img src="templates/meridian/img/logo-footer.png"/>    
+        </div>
+        
+    </div>
+</div>
+<div class="menu-overlay"></div>
+        
+        
+        
+        
 	    <div class="row footer" role="contentinfo">
 		    <div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
 			    <hr />
